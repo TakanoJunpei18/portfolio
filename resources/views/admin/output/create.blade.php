@@ -16,7 +16,7 @@
                         </ul>
                     @endif
                     <div class="form-group row">
-                        <label class="col-md-2">タイトル</label>
+                        <label class="col-md-2">タイトル</label> 
                         <div class="col-md-10">
                             <input type="text" class="form-control" name="title" value="{{ old('title') }}">
                         </div>

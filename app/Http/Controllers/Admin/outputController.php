@@ -88,7 +88,7 @@ public function edit(Request $request)
         $output_form['image_path'] = basename($path);
         
       } else {
-        $output_form['image_path'] = $news->image_path;
+        $output_form['image_path'] = $output->image_path;
         
       }
       unset($output_form['_token']);
@@ -111,7 +111,7 @@ public function edit(Request $request)
      // 削除する
     $output->delete();
     
-    return redirect('admin/output/');
+    return redirect('admin/output/create');
     
   }
   
